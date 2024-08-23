@@ -84,8 +84,6 @@ body{
 .nav-header{
     display: flex;
     justify-content: space-between;
-
-    
 }
 
 .logo{
@@ -96,25 +94,18 @@ body{
 
 /********  hero-section  ********/
 
-.hero-container{
- display: flex;
- flex-wrap: wrap;
-}
-
-
-
 .hero-content{
     display: flex;
     margin-top: 75px;
-   
 }
 
 .text-body{
-   display: flex;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
+   margin: 54px 0px;
 }
 
 .text-body h2{
+    margin: 87px 54px 32px 0px;
     width: 536px;
     font-family:'Poppins',sans-serif;
     font-size: 2.5rem;
@@ -125,7 +116,7 @@ body{
 }
 
 .text-body p{
-    margin-top: 10px;
+    margin: 0px 0px 32px;
     width: 520px;
     color: var(--VDC-color);
     font-weight: 400;
@@ -133,16 +124,16 @@ body{
 }
 
 .hero-content img{
-    width:50%;
+    width:56%;
     height:auto;
-   
 }
+
 
 /**********  together-section  *********/
 .main-container{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 160px;
+    margin: 160px 104px 104px;
 }
 
 
@@ -154,7 +145,6 @@ body{
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
     display: flex;
     align-items: center;
-    gap: 40px;
 }
 .text-content{
 
@@ -177,8 +167,8 @@ body{
 }
 
 .Grow-image{
-    width: 60%;
-    height:auto;
+    width: 80%;
+    height: auto;
 }
 
 
@@ -204,57 +194,9 @@ body{
 
 
 @media screen and (min-width:375px) {
-    .container{
-        max-width: 1440px;
-    }
-
-    .header-container{
-        display: flex;
-
-        
-    }
 
     .nav-header{
-     
-       
-    }
-
-
-    .hero-container{
-        flex-wrap: wrap;
         display: flex;
+        justify-content: space-between;
     }
-
-    .hero-content{
-        display: flex;
-    
-    }
-
-    .hero-content img{
-        flex-wrap: wrap;
-        width: 60%;
-    }
-
-
-    .main-container{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .Grow-card{
-        display: flex;
-    }
-
-    .text-body{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .image{
-        display: flex;
-        width: 60%;
-    }
-
-
-
-
 }
