@@ -93,14 +93,18 @@ body{
 
 
 /********  hero-section  ********/
-
+.hero-container{
+    margin-top: 75px;
+    display: flex;
+   
+}
 .hero-content{
     display: flex;
-    margin-top: 75px;
+    align-items: center;
+    flex-direction: row;
 }
 
 .text-body{
-    flex-wrap: wrap;
    margin: 54px 0px;
 }
 
@@ -124,31 +128,36 @@ body{
 }
 
 .hero-content img{
+    
     width:56%;
     height:auto;
 }
 
 
-/**********  together-section  *********/
+/**********  grow-section  *********/
 .main-container{
     display: flex;
     flex-wrap: wrap;
-    margin: 160px 104px 104px;
+    flex-direction: column;
+    margin: 160px 0px 0px;
+    gap: 40px;
 }
 
 
 .Grow-card{
-    width: 1232px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width:auto;
     height: 440px;
     background-color: #ffff;
     border-radius: 16px;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
-    display: flex;
-    align-items: center;
 }
-.text-content{
 
-    margin:120px;
+
+.text-content{
+    margin:90px;
 }
 
 .text-content h3{
@@ -166,8 +175,8 @@ body{
     line-height: 27px;
 }
 
-.Grow-image{
-    width: 80%;
+.grow-image{
+    width: 50%;
     height: auto;
 }
 
@@ -175,7 +184,35 @@ body{
 
 /*******  conversation-section  *****/
 
+.conversation-card{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
+}
 
+.text-content h3{
+    font-family: 'poppins',sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.text-content p{
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.talk-image{
+    display: flex;
+    width: 90%;
+    height: auto;
+}
 
 
 
@@ -184,19 +221,69 @@ body{
 
 
 
-.user-image{
-    margin: 25px 60px;
-    width: 406px;
-    height: 317px;
-}
 
-
-
-
-@media screen and (min-width:375px) {
+@media screen and (max-width:480px) {
 
     .nav-header{
         display: flex;
         justify-content: space-between;
     }
+
+
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content img{
+        display: flex;
+        align-items: center;
+        width: 56%;
+        height: auto;
+    }
+
+    .text-body{
+       text-align: center;
+       gap: 32px;
+    }
+
+    .text-body h2{
+        margin-bottom: 24px;
+    }
+    .text-body p{
+        margin-bottom: 32px;
+    }
+
+   
+
+
+    .main-container{
+        display: flex;
+        flex-direction:row;
+    }
+
+    .Grow-card{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .text-content{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 50%;
+        height: auto;
+        margin:44px 43px 33px;
+        justify-content: center;
+    }
+
+    .text-content h3{
+        
+    }
+
+    .grow-image img{
+       flex-direction: row-reverse;
+    }
+
+   
 }
